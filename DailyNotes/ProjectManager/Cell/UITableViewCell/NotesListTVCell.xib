@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotesListTVCell" rowHeight="143" id="KGk-i7-Jjw" customClass="NotesListTVCell" customModule="DailyNotes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfb-8v-lGD">
+                        <rect key="frame" x="8" y="8" width="377" height="132"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AbR-zY-Cfa">
+                                <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AbR-zY-Cfa" secondAttribute="height" multiplier="1:1" id="ajr-0E-NwM"/>
+                                    <constraint firstAttribute="height" constant="60" id="gQN-Fv-vai"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-sm-MqG">
+                                <rect key="frame" x="92" y="8" width="269" height="61"/>
+                                <string key="text">- Android: Code update for compatible with latest android studio (some code syntax)
+- Android : App crashes when create new live stream
+- Android : App stuck or hang when startup
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="12:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1M-uW-Tta">
+                                <rect key="frame" x="92" y="73" width="72.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ngU-sm-MqG" secondAttribute="trailing" constant="16" id="5th-YJ-Atc"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="S1M-uW-Tta" secondAttribute="bottom" constant="8" id="Ed5-QU-Nh3"/>
+                            <constraint firstItem="AbR-zY-Cfa" firstAttribute="top" secondItem="Dfb-8v-lGD" secondAttribute="top" constant="8" id="FOP-6z-N6V"/>
+                            <constraint firstItem="S1M-uW-Tta" firstAttribute="leading" secondItem="ngU-sm-MqG" secondAttribute="leading" id="GTg-LD-5oM"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S1M-uW-Tta" secondAttribute="trailing" constant="16" id="RRu-nu-ytv"/>
+                            <constraint firstItem="ngU-sm-MqG" firstAttribute="leading" secondItem="AbR-zY-Cfa" secondAttribute="trailing" constant="16" id="fmh-4a-oKK"/>
+                            <constraint firstItem="ngU-sm-MqG" firstAttribute="top" secondItem="AbR-zY-Cfa" secondAttribute="top" id="oOX-QV-1vv"/>
+                            <constraint firstItem="S1M-uW-Tta" firstAttribute="top" secondItem="ngU-sm-MqG" secondAttribute="bottom" constant="4" id="sCE-ag-gSc"/>
+                            <constraint firstItem="AbR-zY-Cfa" firstAttribute="leading" secondItem="Dfb-8v-lGD" secondAttribute="leading" constant="16" id="sQ3-cn-aC8"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AbR-zY-Cfa" secondAttribute="bottom" constant="8" id="wBn-xe-Rsv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Dfb-8v-lGD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="1cl-oe-tpZ"/>
+                    <constraint firstItem="Dfb-8v-lGD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="JYG-IG-3Yr"/>
+                    <constraint firstAttribute="trailing" secondItem="Dfb-8v-lGD" secondAttribute="trailing" constant="8" id="R06-2A-AUg"/>
+                    <constraint firstAttribute="bottom" secondItem="Dfb-8v-lGD" secondAttribute="bottom" constant="8" id="u4r-Mn-Rt1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLbl" destination="S1M-uW-Tta" id="lLO-S5-WzK"/>
+                <outlet property="mainView" destination="Dfb-8v-lGD" id="ZDJ-Y2-ixa"/>
+                <outlet property="notesImageView" destination="AbR-zY-Cfa" id="fRS-d8-LUT"/>
+                <outlet property="notesTitleLbl" destination="ngU-sm-MqG" id="qwr-iT-TDf"/>
+            </connections>
+            <point key="canvasLocation" x="193.47826086956522" y="164.73214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

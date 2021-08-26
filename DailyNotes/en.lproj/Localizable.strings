@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  DailyNotes
+
+  Created by Tecocraft on 25/08/21.
+  
+*/
+
+// Login Screen
+Login                           = "Log in";
+EmailAddress                    = "Email address";
+EnterEmailAddress               = "Enter email address";
+Password                        = "Password";
+EnterPassword                   = "Enter Password";
+DontHaveAnAccount               = "Don't have an account?";
+Signup                          = "Sign Up";
+
+//Signup Screen
+fullName                        = "Fullname";
+enterFullName                   = "Enter fullname";
+confirmPassword                 = "Confirm Password";
+enterConfirmPassword            = "Enter confirm password";
+alreadyHaveAnAccount            = "Already have an account?";
+
+//NotesList
+notesList                       = "Notes List";
+
+//AddNotes
+addNotes                        = "Add Notes";
+addImage                        = "Add Image";
+description                     = "Description";
+addItem                         = "Add Item";
+
+// Dialogs Strings
+fullNameMandatory               = "Fullname is mandatory";
+
+emailIDMandatory                = "Email address is mandatory";
+
+validEmailId                    = "Invalid email address";
+
+passwordMandatory               = "Password is mandatory";
+
+validpassword                   = "Password must include atleast 1 uppercase alphabetic character, number, special character and must be atleast 6 characters long";
+
+confirmPasswordMandatory        = "Confirm password is mandatory";
+
+confirmPasswordLength           = "Confirm password needs to be at least 6 characters long";
+
+confirmPasswordMatch            = "Password & confirm password must be same";
+
+profileImageMandatory           = "Image is mandatory";
+
+invalidEmailPassword            = "Invalid Email or Password";
+
+AreYouSureLogout                = "Are you sure you want to logout?";
+
+areYouSureDelete                = "Are you sure you want to delete?";
+
+yes                             = "Yes";
+
+no                              = "No";
+
+cancel                          = "Cancel";
+
+pleaseAddImage                  = "Please add image";
+
+pleaseAddDescription            = "Please add description";
+
+ok                              = "Ok";
